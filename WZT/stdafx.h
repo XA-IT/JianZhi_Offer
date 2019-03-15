@@ -46,3 +46,5 @@
 #include <vector>//STL 动态数组容器   
 #include <cwchar>   
 #include <cwctype>
+
+using namespace std;
