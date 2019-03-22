@@ -4,9 +4,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define _USE_MATH_DEFINES
+//#define _USE_MATH_DEFINES
 #include <math.h>
-#undef  _USE_MATH_DEFINES
+//#undef  _USE_MATH_DEFINES
 
 #include <memory.h>
 

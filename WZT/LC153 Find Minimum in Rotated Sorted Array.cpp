@@ -15,11 +15,14 @@
 // Input: [4,5,6,7,0,1,2]
 // Output: 0
 
-#include "stdafx.h"
+#include "premain.h"
+//#include <vector>
+using namespace std;
+
 
 class Solution {
 public:
-    int findMin(vector<int>& nums) {
+    int findMin(vector <int>& nums) {
         int length = nums.size();
         if (!length) return 0;
         if (length == 1 || nums[0] < nums.back()) return nums[0];
