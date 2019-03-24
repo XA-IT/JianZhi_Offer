@@ -19,9 +19,9 @@
 // This is a follow up problem to Find Minimum in Rotated Sorted Array.
 // Would allow duplicates affect the run-time complexity? How and why?
 #include "premain.h"
-#include <vector>
-#include <stdio.h>
-#include <iostream>
+//#include <vector>
+//#include <stdio.h>
+//#include <iostream>
 
 using namespace std;
 
