@@ -1,4 +1,10 @@
+#ifndef STDAFX_H
+#define STDAFX_H
+
+#if _MSC_VER > 1000
 #pragma once
+#endif // _MSC_VER > 1000
+
 
 #include <assert.h>
 #include <stdio.h>
@@ -56,3 +62,5 @@ struct TreeNode {
     TreeNode *right;
     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
 };
+
+ #endif
