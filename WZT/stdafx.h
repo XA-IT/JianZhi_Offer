@@ -53,6 +53,8 @@
 #include <cwchar>   
 #include <cwctype>
 
+#include <memory>
+
 using namespace std;
 
 // Definition for a binary tree node.
