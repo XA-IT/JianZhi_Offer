@@ -68,7 +68,7 @@ QueryResult TextQuery::query(const string & sought) const
 
 ostream& print(ostream& os, const QueryResult &qr) 
 {
-    os << qr.sought << " occurs" << qr.lines->size() << " "
+    os << qr.sought << " occurs " << qr.lines->size() << " "
        << make_plural(qr.lines->size(), "time", "s") << endl;
     
     for (auto num : *qr.lines) {
@@ -93,7 +93,8 @@ void runQueries(ifstream &infile)
 }
 
 int main() {
-    ifstream ff("LC23 Merge k Sorted Lists.cpp");
+    ifstream ff("d:\\Programing\\CPP coding2\\WZT\\LC23 Merge k Sorted Lists.cpp");
     runQueries(ff);
+    ff.close();
     return 0;
 }
