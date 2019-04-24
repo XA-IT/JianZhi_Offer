@@ -41,12 +41,12 @@ void deal_core(vector<int>& aa, vector<int>& bb,
     while (a1 < aa.size() && b1 < bb.size()) {
         if (aa[a1] < bb[b1]) {
             tmpr.push_back(aa[a1]);
-
-                ++a1;
-
-        } else {
+            ++a1;
+        } else if (aa[a1] == bb[b1])
+          	++b1;
+        else {
             tmpr.push_back(bb[b1]);
-             ++b1;
+            ++b1;
 
         }
     }
@@ -59,11 +59,16 @@ void deal_core(vector<int>& aa, vector<int>& bb,
 }
 
 void print_res(const vector<vector<int> > & res) {
-    for (auto res_it = res.begin(); res_it != res.end(); ++res_it) {
-        for (auto tmp_it = res_it->begin(); tmp_it != res_it->end(); ++tmp_it) {
-            cout << *tmp_it << " ";
+    for (size_t i = 0; i < res.size(); ++i) {
+        for (size_t j = 0; ; ++j) {
+            cout << res[i][j];
+            if (j < res[i].size() - 1)
+                cout << " ";
+            else {
+                cout << endl;
+                break;
+            }
         }
-        cout << endl;
     }
 }
 
