@@ -4,3 +4,5 @@
 
 /.vs
 /.vscode
+# 忽略了全部exe文件
+*.exe

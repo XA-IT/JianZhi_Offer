@@ -10,7 +10,7 @@
 //ÊäÈë: -1->5->3->4->0
 //Êä³ö: -1->0->3->4->5
 
-#include "stdafx.h"
+#include "../public_utils.h"
 
 /**
  * Definition for singly-linked list.
@@ -98,6 +98,6 @@ int main() {
     }
     Solution so;
     ListNode* sorted = so.sortList(prev->next);
-    sorted->printList(sorted);
+    printListNode(sorted);
     return 0;
 }
