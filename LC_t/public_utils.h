@@ -31,6 +31,18 @@ void printBFSBinTree(TreeNode *root);
 // 空节点值为-2
 TreeNode *buildTreeFromBFSVec(vector<int> &nums);
 
+// 将int型的矩阵转换为char型的矩阵
+vector<vector<char>> transIntMatrix2Chars(vector<vector<int>> &nums);
+// 打印矩阵的内容
+void printMatrix(vector<vector<int>>& nums);
+void printMatrix(vector<vector<char>>& nums);
+
+
+
+// ************************************************************
+//     以下为函数实现
+// ************************************************************
+
 // 依次打印单链表全部节点的值
 void printListNode(ListNode *head)
 {
@@ -146,4 +158,52 @@ TreeNode *buildTreeFromBFSVec(vector<int> &nums)
         }
     }
     return root;
+}
+
+vector<vector<char>> transIntMatrix2Chars(vector<vector<int>> &nums)
+{
+    int row = nums.size();
+    if (row < 1)
+        return { };
+    int col = nums[0].size();
+    vector<vector<char>> chars(row, vector<char> (col, '0'));
+    for (int i = 0; i < row; i++) {
+        for (int j = 0; j < col; j++) {
+            chars[i][j] += nums[i][j];
+        }
+    }
+    return chars;
+}
+
+// 打印矩阵的内容
+void printMatrix(vector<vector<int>>& nums)
+{
+    int row = nums.size();
+    if (row < 1)
+        return;
+    int col = nums[0].size();
+    cout << "The matrix is " << row << " * " << col << ":" << endl;
+    for (int i = 0; i < row; i++) {
+        for (int j = 0; j < col; j++) {
+            cout << nums[i][j] << " ";
+        }
+        cout << endl;
+    }
+    return;
+}
+
+void printMatrix(vector<vector<char>>& nums)
+{
+    int row = nums.size();
+    if (row < 1)
+        return;
+    int col = nums[0].size();
+    cout << "The matrix is " << row << " * " << col << ":" << endl;
+    for (int i = 0; i < row; i++) {
+        for (int j = 0; j < col; j++) {
+            cout << nums[i][j] << " ";
+        }
+        cout << endl;
+    }
+    return;
 }
