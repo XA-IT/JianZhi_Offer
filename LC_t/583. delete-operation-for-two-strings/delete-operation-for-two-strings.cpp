@@ -22,6 +22,7 @@
 
 class Solution {
 public:
+    // 方法一采用递归运行速度较慢
     // int calSameLen(string word1, int idx1, string word2, int idx2, vector<vector<int>> &tmp) {
     //     if (idx1 == 0 || idx2 == 0)
     //         return 0;
