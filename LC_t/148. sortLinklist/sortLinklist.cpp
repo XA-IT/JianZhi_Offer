@@ -10,7 +10,7 @@
 //ÊäÈë: -1->5->3->4->0
 //Êä³ö: -1->0->3->4->5
 
-#include "../public_utils.h"
+#include "../public_utils/public_utils.h"
 
 /**
  * Definition for singly-linked list.

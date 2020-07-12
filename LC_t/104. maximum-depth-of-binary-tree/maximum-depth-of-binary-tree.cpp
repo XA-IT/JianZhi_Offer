@@ -15,7 +15,7 @@
 //    15   7
 // 返回它的最大深度 3 。
 
-#include "..\\public_utils.h"
+#include "../public_utils/public_utils.h"
 
 /**
  * Definition for a binary tree node.

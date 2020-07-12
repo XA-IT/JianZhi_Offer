@@ -4,7 +4,7 @@
  * 当首次构造完成后，每次从根节点取出该元素放在激活的堆的末尾，并将其从堆中删除，则整体有序
  * 若为最大堆，则为非递减序列，反之为非递增序列
 */
-#include "../public_utils.h"
+#include "../public_utils/public_utils.h"
 
 template<typename T>
 class heapSort {
