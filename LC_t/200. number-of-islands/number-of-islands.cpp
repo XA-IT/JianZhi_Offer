@@ -23,7 +23,7 @@
 // 输出: 3
 // 解释: 每座岛屿只能由水平和/或竖直方向上相邻的陆地连接而成。
 
-#include "../public_utils.h"
+#include "../public_utils/public_utils.h"
 
 class Solution {
 private:

@@ -30,7 +30,7 @@
 // 1 <= k <= nums.length
 // 通过次数58,254提交次数120,988
 
-#include "../public_utils.h"
+#include "../public_utils/public_utils.h"
 
 class Solution {
 private:

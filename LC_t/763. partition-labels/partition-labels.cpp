@@ -15,7 +15,7 @@
 
 // S的长度在[1, 500]之间。
 // S只包含小写字母 'a' 到 'z' 。
-#include "../public_utils.h"
+#include "../public_utils/public_utils.h"
 
 class Solution {
 public:
