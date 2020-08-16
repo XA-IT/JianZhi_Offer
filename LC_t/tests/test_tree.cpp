@@ -13,6 +13,7 @@ int main()
         // printBFSBinTree(root);
         // printPreorderBinTree(root);
         ListNode *head = buildListFromVec(te);
+        printMatrix(tests);
         printListNode(head);
     }
     return 0;
