@@ -1,4 +1,4 @@
-#include "../public_utils/public_utils.h"
+#include "public_utils/public_utils.h"
 
 /*
     for 状态1 in 状态1的所有取值：
