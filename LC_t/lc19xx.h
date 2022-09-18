@@ -1,3 +1,4 @@
+#pragma once
 #include "public_utils/public_utils.h"
 
 class Solution_lc1958 {
